@@ -91,23 +91,24 @@ while True:
 
     if system == 1:
         binary = input("Please enter a binary number: ")
-        print(binToDec(binary))
+        print("Decimal number: ", binToDec(binary))
 
     elif system == 2:
         decNum = int(input("Please enter a Decimal number: "))
-        print(*decToBin(decNum), sep='')
+        print("Binary number: ", *decToBin(decNum), sep='')
 
     elif system == 3:
         hexNum = input("Please enter a Hexadecimal number: ")
-        print(hexToDec(hexNum))
+        print("Decimal number: ",hexToDec(hexNum))
 
     elif system == 4:
         decNum = int(input("Please enter a Decimal number: "))
-        print(*decToHex(decNum), sep='')
+        print("Hexadecial number: ",*decToHex(decNum), sep='')
 
     elif system == 5:
         hexNum = input("Please enter a Hexadecimal number: ")
-        print(*hexToBin(hexNum), sep='')
+        print("Binary number: "*hexToBin(hexNum), sep='')
 
     else:
+        print("End of program")
         break
